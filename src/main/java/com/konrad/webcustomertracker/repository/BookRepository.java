@@ -1,0 +1,10 @@
+package com.konrad.webcustomertracker.repository;
+
+import com.konrad.webcustomertracker.entity.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface BookRepository extends JpaRepository<Book, Long> {
+}
