@@ -26,7 +26,7 @@ public class BookController {
         this.authorService = authorService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/rrrrrrrrrrrrrrrr")
     public String listBookView(Model model) {
         model.addAttribute("books", bookService.findAll());
         return "bookList";

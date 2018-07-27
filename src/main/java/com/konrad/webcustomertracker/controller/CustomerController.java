@@ -17,7 +17,12 @@ public class CustomerController {
 
     @GetMapping("/")
     public String listClient(Model model) {
-        model.addAttribute("customer", customerManager.find(1));
-        return "bookList";
+        model.addAttribute("customers", customerManager.findAll());
+        return "list-customers";
+    }
+
+    @GetMapping("addCustomer")
+    public String addCustomer(Model model) {
+        return "customer-form";
     }
 }
