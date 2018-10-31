@@ -18,7 +18,7 @@ import java.util.List;
 public class BookController {
 
     private IBookService bookService;
-    private IAuthorService authorService;
+    private IAuthorService authorService;//todo
 
     @Autowired
     public BookController(IBookService bookService, IAuthorService authorService) {
